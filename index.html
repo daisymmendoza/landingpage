@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+    html{
+        background-color: rgb(42, 77, 105);
+    }
+
+    /* @media screen and (max-width: 600px) */
+
+    /* @media screen and (max-width: 800px) {
+        .headings, #brand, #mainhead, #desc, .button, .btntxt, .art1, .wknd, .wknd img, .bil, .bil img, .trvs, .trvs img, .drke, .drke img, .art2, .ari, .ari img, .rex, .rex img, .meg, .meg img, .dua, .dua img, .button2, .btntxt2, .trial {
+            width: 100%;
+        }
+    } */
+
+    .headings{
+        margin-left: 100px;
+    }
+
+    #brand{
+        color: rgb(231, 239, 246);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em;
+    }
+
+    #mainhead{
+        text-transform: capitalize;
+        color: rgb(231, 239, 246);
+        margin-top: 150px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+
+    #desc{
+        color: rgb(173, 203, 227);
+        font-family: 'Open Sans', sans-serif;
+        margin-top: -20px;
+        font-size: 1.1em;
+    }
+
+    .button{
+        border-radius: 25px;
+        text-transform: uppercase;
+        background: rgb(75, 134, 180);
+        width: 175px;
+        height: 35px;
+        margin-left: 100px;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        color: rgb(173, 203, 227);
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .btntxt{
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+
+    .art1{
+        float: right;
+        margin-left: -100px;
+        margin-top: -220px;
+    }
+
+    .wknd{
+        border-radius: 25px;
+        background: rgb(179, 36, 43);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        float: left;
+    }
+
+    .wknd img{
+        border-radius: 25px;
+    }
+
+    .bil{
+        border-radius: 25px;
+        background: rgb(202, 186, 113);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .bil img{
+        border-radius: 25px;
+    }
+
+    .trvs{
+        border-radius: 25px;
+        background: rgb(109, 74, 165);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .trvs img{
+        border-radius: 25px;
+    }
+
+    .drke{
+        border-radius: 25px;
+        background: rgb(180, 123, 192);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+        margin-right: 100px;
+    }
+
+    .drke img{
+        border-radius: 25px;
+    }
+
+    .art2{
+        float: right;
+        margin-left: -100px;
+        margin-top: -50px;
+    }
+
+    .ari{
+        border-radius: 25px;
+        background: rgb(123, 192, 138);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .ari img{
+        border-radius: 25px;
+    }
+
+    .rex{
+        border-radius: 25px;
+        background: rgb(235, 148, 78);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .rex img{
+        border-radius: 25px;
+    }
+
+    .meg{
+        border-radius: 25px;
+        background: rgb(172, 86, 90);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .meg img{
+        border-radius: 25px;
+    }
+
+    .dua{
+        border-radius: 25px;
+        background: rgb(123, 176, 192);
+        padding: 10px;
+        width: 140px;
+        height: 130px;
+        display: inline;
+        margin-left: 20px;
+        float: left;
+        margin-right: 100px;
+    }
+
+    .dua img{
+        border-radius: 25px;
+    }
+
+    .button2{
+        border-radius: 25px;
+        text-transform: uppercase;
+        background: rgb(75, 134, 180);
+        width: 200px;
+        height: 35px;
+        margin-left: 600px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        color: rgb(173, 203, 227);
+        cursor: pointer;
+    }
+
+    .btntxt2{
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+
+    .trial{
+        margin-left: 560px;
+        margin-top: 170px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1em;
+        color: rgb(231, 239, 246);
+    }
+</style>
+
+</head>
+<body>
+<!--Brand name, heading, and description-->
+<div class="headings">
+    <p id="brand">
+        ♫ Musify
+    </p>
+    <p id="mainhead"> <b>
+        Jam out to
+        <br>
+        some music
+    </b></p>
+    <p id="desc">
+        Explore new artists, genres, and playlists with
+        <br>
+        Musify's library of over 50 million songs.
+    </p>
+</div>
+
+<!--Join button-->
+<button class="button" onclick= "alert('The page you are trying to reach is currently under construction')">
+    Start free trial
+</button>
+
+<!--Artist bubbles- Row 1-->
+<div class="art1">
+    <!--The Weeknd-->
+    <div class="wknd">
+        <img src="images/the weeknd.png" alt="The Weeknd" width="140" height="130"> 
+    </div>
+    <!--Billie Eilish-->
+    <div class="bil">
+        <img src="images/billie eilish.png" alt="Billie Eilish" width="140" height="130"> 
+    </div>
+    <!--Travis Scott-->
+    <div class="trvs">
+        <img src="images/travis scott.png" alt="Travis Scott" width="140" height="130"> 
+    </div>
+    <!--Drake-->
+    <div class="drke">
+        <img src="images/drake.png" alt="Drake" width="140" height="130"> 
+    </div>
+</div>
+<!--Artist bubbles- Row 2-->
+<div class="art2">
+    <!--Ariana Grande-->
+    <div class="ari">
+        <img src="images/ariana.png" alt="Ariana Grande" width="140" height="130"> 
+    </div>
+    <!--Rex Orange County-->
+    <div class="rex">
+        <img src="images/rex.PNG" alt="Rex Orange County" width="140" height="130"> 
+    </div>
+    <!--Megan Thee Stallion-->
+    <div class="meg">
+        <img src="images/megan.png" alt="Megan thee Stallion" width="140" height="130"> 
+    </div>
+    <!--Dua Lipa-->
+    <div class="dua">
+        <img src="images/dualipa.png" alt="Dua Lipa" width="140" height="130"> 
+    </div>
+</div>
+
+<!--Free trial (text)-->
+    <p class="trial">
+        Unlock access to Musify's full library
+        <br>
+        and listen ad free for $5.99/month.
+    </p>
+
+<!--Free trial button-->
+<button class="button2" onclick= "alert('The page you are trying to reach is currently under construction')">
+    Get Musify premium
+</button>
+
+<!--Color scheme:
+    #2a4d69 = rgb(42, 77, 105)
+    #4b86b4 = rgb(75, 134, 180)
+    #adcbe3 = rgb(173, 203, 227)
+    #e7eff6 = rgb(231, 239, 246)
+    #63ace5 = rgb(99, 172, 229)
+-->
+</body>
+</html>
